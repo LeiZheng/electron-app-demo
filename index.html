@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <script src="app.js"></script>
+  </head>
+  <body>
+  <!--You can change the dimensions of the camera with height and weight, (text align and margin is just for center the image)-->
+  <div class="row">
+    <div class="column">
+      <video id="video" autoplay>Video stream not available.</video>
+      <button id="startbutton">Take photo</button>
+      <button id="clearbutton">Clear photo</button>
+      <button id="loadfromcarema">Load Camera</button>
+      <button id="loadfromurl">Load Video By Url</button>
+      <canvas id="canvas" style="display: none">
+      </canvas>
+    </div>
+    <div id="output"  class="column" >
+
+    </div>
+  </div>
+
+
+    <script>
+        // You can also require other files to run in this process
+        require('./renderer.js')
+        // Grab elements, create settings, etc.
+        // A flag to know when start or stop the camera
+
+    </script>
+  </body>
+</html>
