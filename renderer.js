@@ -26,8 +26,11 @@ let processor = null;
 DidComponentReady();
 
 function loadFromURL(){
-    video.src = "http://vjs.zencdn.net/v/oceans.mp4";
+    video.srcObject = null;
+    video.src = "http://d9h4t5ii70mc4.cloudfront.net/thundercloud/TC_Texas_State_FB/7b4e8034-4129-4cbb-93c4-c9b1a81b3c5f_1200.MP4?Expires=1539708489&Signature=YfSV1iwU5wtfWtfOxptfom6pKNxtQ~0DWAKT9TYv6AAS-yP44MXZmUcwyANnBxkDzkNBrN-hY08BIKqjZFXLiaPUJT7~N~Pgu-tstTSM0h~TCBrC3hJDinCeqIUjv5iWOPLc0aAYVVUdjx~k~GmlGd~rE7PlnIPzFzndWEVpmZQ_&Key-Pair-Id=APKAJQ42JP5J5WCIBJDA";
     recordurl = video.src;
+
+    video.reload();
     video.play();
 
 }
